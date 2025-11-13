@@ -4,13 +4,13 @@
 [![License](https://img.shields.io/github/license/yourusername/data-cli.svg)](LICENSE)
 
 A tiny, dependency-free library that lets you **interactively fill dataclass instances** via the command line.
-Perfect for quick data entry, prototyping, or structured configuration.
+Useful for quick data entry, prototyping, or structured configuration; easily integrated into your own CLI tools.
 ---
 
 ## Features
 - Supports defaults and nested dataclasses
 - Supports custom parsers
-- Automatically structures prompts to flow naturally through nested structures
+- Structures prompts to flow naturally through nested structures
 ---
 
 ## Installation
