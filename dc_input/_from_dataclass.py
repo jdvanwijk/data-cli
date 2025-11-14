@@ -50,9 +50,9 @@ def _flatten_schema(schema: Schema) -> list[KeyPath]:
 
 
 def _parse_input(s: str, t: type, parsers: Parsers | None = None) -> object:
-    if p := parsers.get(t):
-        return p(s)
-    return t(s)
+    if not parsers or not parsers.get(t):
+        return t(s)
+    return parsers[t](s)
 
 
 def _dict_to_dataclass[T](cls: type[T], data: Result) -> T:
